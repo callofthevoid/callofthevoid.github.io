@@ -1,49 +1,70 @@
-
-
-*{
-  box-sizing: border-box;
+body {
+  background: rgb(252,249,235);
   margin: 0;
   padding: 0;
+  font-family: 'Oswald';
 }
-
-html,
-body{
-  background-color: #2D112B;
+.parallax-container {
+  position: fixed;
+  overflow: visible;
+  width: 100%;
+  height: 150px;
 }
-
-.parallax {
-  perspective: 100px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 0;
-  bottom: 0;
-  margin-left: -1250px;
-}
-
-.parallax__layer{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+.parallax-layer {
+  width: 100%;
+  height: 450px;
+  position: fixed;
   left: 0;
+  top: 100px;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  background-size: 2500px 450px;
+  /*background-size: cover;*/
+}
+  .layer-0 {
+    top: 50px;
+    z-index: 2;
+    background-image: url('sky.png');
   }
-  img{
-    display: block;
-    position: absolute;
-    bottom: 0;
+  .layer-1 {
+    top: 100px;
+    z-index: 5;
+    background-image: url('mountains3.png');
+  }
+  .layer-2 {
+    top: 100px;
+    z-index: 10;
+    background-image: url('mountains2.png');
+  }
+  .layer-3 {
+    top: 150px;
+    z-index: 15;
+    background-image: url('mountains.png');
+  }
+  .layer-4 {
+    top: 250px;
+    z-index: 20;
+    background-image: url('hills.png');
+  }
+  .layer-5 {
+    top: 400px;
+    z-index: 25;
+    background-image: url('trees.png');
   }
 
-.parallax__cover{
-  background: #2D112B;
-  display: block;
+  
+.content {
+  background-color: rgb(46,17,43);
   position: absolute;
-  top: 99%;
-  left: 0;
-  right: 0;
-  height: 2000px;
-  z-index: 2;
+  top: 700px;
+  width: 100%;
+  min-height: 1500px;
+  z-index: 1;
 }
+  .content h1 {
+    top: 100%;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+  }
