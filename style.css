@@ -1,4 +1,17 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	background-image: url("pixelBrick.jpg");
 	background-repeat: repeat;
+}
+
+.main {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.75);
+	background-size: cover;
 }
